@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Paridhan - Trust of India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <p>Shyam Paridhan - Trust of India</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="public/images/logo/logo.png" alt="Shyam Paridhan Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1>SHYAM PARIDHAN</h1>
+                        <span>STORE</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <a href="#account"><i class="fas fa-user"></i></a>
+                    <a href="#cart" class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose">&times;</button>
+            <input type="text" placeholder="Search for products..." class="search-input">
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Category Carousel -->
+    <section class="category-carousel">
+        <div class="container">
+            <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);">
+                            <img src="public/images/bar/rajputi_poshak.jpeg" alt="Rajputi Poshak">
+                        </div>
+                        <p>RAJPUTI POSHAK</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #f57c00 0%, #ff9800 100%);">
+                            <img src="public/images/bar/odhni.jpeg" alt="Odhni">
+                        </div>
+                        <p>ODHNI</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #0288d1 0%, #03a9f4 100%);">
+                            <img src="public/images/bar/cotton_suit.jpeg" alt="Cotton Suit">
+                        </div>
+                        <p>COTTON SUIT</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #5d4037 0%, #795548 100%);">
+                            <img src="public/images/bar/gotta_laffajpeg.jpeg" alt="Gotta Laffa">
+                        </div>
+                        <p>GOTTA LAFFA</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 100%);">
+                            <img src="public/images/bar/kota_doriya.jpeg" alt="Kota Doriya">
+                        </div>
+                        <p>KOTA DORIYA</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #c62828 0%, #e53935 100%);">
+                            <img src="public/images/bar/banarsi_suit.jpg" alt="Banarasi Suit">
+                        </div>
+                        <p>BANARASI SUIT</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #1565c0 0%, #1976d2 100%);">
+                            <img src="public/images/bar/work_suit.jpeg" alt="Work Suit">
+                        </div>
+                        <p>WORK SUIT</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #388e3c 0%, #4caf50 100%);">
+                            <img src="public/images/bar/hamrai_pure.jpeg" alt="Hamrai Pure">
+                        </div>
+                        <p>HAMRAI PURE</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #fdd835 0%, #ffeb3b 100%);">
+                            <img src="public/images/bar/jewellery.jpeg" alt="Jewellery">
+                        </div>
+                        <p>JEWELLERY</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);">
+                            <img src="public/images/bar/bangles2.jpeg" alt="Bangles">
+                        </div>
+                        <p>BANGLES</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #ec407a 0%, #f48fb1 100%);">
+                            <img src="public/images/bar/girls_accesary.jpeg" alt="Girls Accessory">
+                        </div>
+                        <p>GIRLS ACCESSORY</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-circle" style="background: linear-gradient(135deg, #ad1457 0%, #c2185b 100%);">
+                            <img src="public/images/bar/makeup.jpeg" alt="Makeup">
+                        </div>
+                        <p>MAKEUP</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero-banner">
+        <div class="hero-slide active">
+            <img src="public/images/banner/banner.png" alt="Shyam Paridhan Collection">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2>Browse Our Latest Products</h2>
+                    <a href="#shop" class="btn-shop">SHOP ALL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Banners -->
+    <section class="collection-banners">
+        <div class="container">
+            <div class="banner-grid">
+                <div class="collection-banner">
+                    <img src="public/images/top3/kota_doriya.png" alt="Kota Doriya Collection">
+                    <div class="banner-content">
+                        <h3>Premium Kota Doriya</h3>
+                        <a href="#kota-doriya" class="banner-link">Shop Now →</a>
+                    </div>
+                </div>
+                <div class="collection-banner">
+                    <img src="public/images/top3/cotton_suit.jpg" alt="Cotton Suit Collection">
+                    <div class="banner-content">
+                        <h3>Cotton Suit</h3>
+                        <a href="#cotton-suit" class="banner-link">Shop Now →</a>
+                    </div>
+                </div>
+                <div class="collection-banner">
+                    <img src="public/images/top3/hamrai_pure.jpeg" alt="Hamrai Pure Collection">
+                    <div class="banner-content">
+                        <h3>Hamrai Pure</h3>
+                        <a href="#hamrai-pure" class="banner-link">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="new">New Arrivals</button>
+                    <button class="filter-tab" data-filter="sale">On Sale</button>
+                    <button class="filter-tab" data-filter="trending">Trending</button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="new">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop" alt="Premium Rajputi Poshak">
+                        <div class="product-badge new">New</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Premium Rajputi Poshak</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹4,999</span>
+                            <span class="old-price">₹7,999</span>
+                            <span class="discount">38% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #d32f2f;"></span>
+                            <span class="color-dot" style="background: #1976d2;"></span>
+                            <span class="color-dot" style="background: #388e3c;"></span>
+                            <span class="color-more">+3</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="sale">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400&h=500&fit=crop" alt="Designer Saree">
+                        <div class="product-badge sale">Sale 50%</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Designer Silk Saree</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹2,999</span>
+                            <span class="old-price">₹5,999</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #ff1744;"></span>
+                            <span class="color-dot" style="background: #ffd600;"></span>
+                            <span class="color-dot" style="background: #00e676;"></span>
+                            <span class="color-more">+5</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="trending">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=400&h=500&fit=crop" alt="Bridal Lehenga">
+                        <div class="product-badge trending">Trending</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Bridal Lehenga Choli</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(342)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹12,999</span>
+                            <span class="old-price">₹18,999</span>
+                            <span class="discount">32% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #d32f2f;"></span>
+                            <span class="color-dot" style="background: #c2185b;"></span>
+                            <span class="color-dot" style="background: #7b1fa2;"></span>
+                            <span class="color-more">+8</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="new">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400&h=500&fit=crop" alt="Anarkali Suit">
+                        <div class="product-badge new">New</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Designer Anarkali Suit</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(189)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹3,499</span>
+                            <span class="old-price">₹5,999</span>
+                            <span class="discount">42% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #1976d2;"></span>
+                            <span class="color-dot" style="background: #388e3c;"></span>
+                            <span class="color-dot" style="background: #f57c00;"></span>
+                            <span class="color-more">+4</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="sale">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop&q=80" alt="Cotton Suit">
+                        <div class="product-badge sale">Sale 45%</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Pure Cotton Suit Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹1,649</span>
+                            <span class="old-price">₹2,999</span>
+                            <span class="discount">45% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #fff;" style="border: 1px solid #ddd;"></span>
+                            <span class="color-dot" style="background: #ffc107;"></span>
+                            <span class="color-dot" style="background: #e91e63;"></span>
+                            <span class="color-more">+6</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="trending">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400&h=500&fit=crop&q=80" alt="Banarasi Saree">
+                        <div class="product-badge trending">Trending</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Banarasi Silk Saree</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(412)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹8,999</span>
+                            <span class="old-price">₹14,999</span>
+                            <span class="discount">40% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #d32f2f;"></span>
+                            <span class="color-dot" style="background: #1976d2;"></span>
+                            <span class="color-dot" style="background: #388e3c;"></span>
+                            <span class="color-more">+7</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="new">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=400&h=500&fit=crop&q=80" alt="Party Wear">
+                        <div class="product-badge new">New</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Party Wear Gown</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(167)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹5,499</span>
+                            <span class="old-price">₹8,999</span>
+                            <span class="discount">39% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000;"></span>
+                            <span class="color-dot" style="background: #d32f2f;"></span>
+                            <span class="color-dot" style="background: #1976d2;"></span>
+                            <span class="color-more">+3</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="sale">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400&h=500&fit=crop&q=80" alt="Kurti Set">
+                        <div class="product-badge sale">Sale 55%</div>
+                        <div class="product-actions">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon quick-view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon compare-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-vendor">Shyam Paridhan</div>
+                        <h3>Designer Kurti Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(203)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₹899</span>
+                            <span class="old-price">₹1,999</span>
+                            <span class="discount">55% OFF</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #e91e63;"></span>
+                            <span class="color-dot" style="background: #9c27b0;"></span>
+                            <span class="color-dot" style="background: #00bcd4;"></span>
+                            <span class="color-more">+5</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>On orders above ₹999</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>7 days return policy</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Payment</h3>
+                    <p>100% secure transactions</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get updates on new arrivals and special offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SHYAM PARIDHAN</h3>
+                    <p>Your trusted destination for premium quality clothing and fashion.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#shipping">Shipping Policy</a></li>
+                        <li><a href="#returns">Returns & Exchange</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Your Address Here</li>
+                        <li><i class="fas fa-phone"></i> +91 XXXXX XXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@shyamparidhan.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shyam Paridhan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
